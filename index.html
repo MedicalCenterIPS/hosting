@@ -115,6 +115,12 @@
         .card-text {
             font-size: 16px;
         }
+
+        input[type="date"] {
+            padding: 10px; /* Ajusta el espaciado dentro del input */
+            border: 1px solid #ccc; /* Añade un borde al input */
+            border-radius: 5px; /* Agrega bordes redondeados */
+        }
     </style>
 </head>
 
@@ -184,7 +190,7 @@
 
     <form action="/agendar-cita" method="post">
         <label for="name">Nombre:</label>
-        <input class="miSelect" type="text" id="name" name="name" required>
+        <input  type="text" id="name" name="name" required>
 
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
@@ -212,9 +218,10 @@
         // Validar campos
         var nombre = $('input[name="nombre"]').val();
         var email = $('input[name="email"]').val();
-        var telefono = $('input[name="telefono"]').val();
+        var phone = $('input[name="phone"]').val();
+        var date = $('input[name="date"]').val();
 
-        if (nombre === '' || email === '' || telefono === '') {
+        if (nombre === '' || email === '' || phone === '' || date === '') {
             Swal.fire({
                 icon: 'info',
                 title: '!Lo siento!',
