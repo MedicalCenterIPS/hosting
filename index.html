@@ -22,6 +22,28 @@
             text-align: center;
         }
 
+        footer {
+            background-image: url('https://i.ibb.co/8zhm1Z4/tu-imagen.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .card-c {
+            background-image: url('https://i.ibb.co/pQVgFSV/contacto.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            height: 300px;
+            margin-top: 10%;
+            color: white;
+            position: relative;
+        }
+
+        
+
+
+
         nav {
             display: flex;
             justify-content: center;
@@ -42,6 +64,7 @@
             margin: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            height: 250px;
         }
 
         .mission h2,
@@ -117,42 +140,57 @@
         }
 
         input[type="date"] {
-            padding: 10px; /* Ajusta el espaciado dentro del input */
-            border: 1px solid #ccc; /* Añade un borde al input */
-            border-radius: 5px; /* Agrega bordes redondeados */
+            padding: 10px;
+            /* Ajusta el espaciado dentro del input */
+            border: 1px solid #ccc;
+            /* Añade un borde al input */
+            border-radius: 5px;
+            /* Agrega bordes redondeados */
         }
+        
     </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <h1>Medical Center</h1>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Sobre Nosotros</a>
-                <a href="#">Contacto</a>
-            </nav>
-            <h3>Agendar cita</h3>
+            <h1> SIE Medical Center</h1>
+            <h6>Salud Educación Investigación</h5>
+                <br>
+                <h3>Portal de Citas Prioritarias Particulares</h3>
+                <nav>
+                    <a href="#mision-vision">Inicio</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
         </div>
     </header>
-
-    <div class="mission">
-        <h2>Misión</h2>
-        <p>"En Medical Center, nos comprometemos a proporcionar una atención médica integral y compasiva a cada
-            paciente. Nuestra misión es ofrecer servicios de alta calidad, utilizando tecnología de vanguardia y un
-            enfoque centrado en el paciente para mejorar la salud y el bienestar de la comunidad a la que servimos."</p>
+    <div class="container">
+        <div class="row" id="mision-vision">
+            <div class="col-md-6">
+                <div class="mission ">
+                    <h2>Misión</h2>
+                    <p>"En Medical Center, nos comprometemos a proporcionar una atención médica integral y compasiva a
+                        cada
+                        paciente. Nuestra misión es ofrecer servicios de alta calidad, utilizando tecnología de
+                        vanguardia y un
+                        enfoque centrado en el paciente para mejorar la salud y el bienestar de la comunidad a la que
+                        servimos."</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="vision ">
+                    <h2>Visión</h2>
+                    <p>"Nuestra visión en Medical Center es ser reconocidos como líderes en la prestación de servicios
+                        médicos,
+                        destacándonos por la excelencia en el cuidado de la salud. Aspiramos a ser un centro médico
+                        innovador que
+                        abarca avances médicos, promueve la educación y la prevención, y se compromete a ser un pilar en
+                        el apoyo a
+                        la salud y el bienestar de todos nuestros pacientes."</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="vision">
-        <h2>Visión</h2>
-        <p>"Nuestra visión en Medical Center es ser reconocidos como líderes en la prestación de servicios médicos,
-            destacándonos por la excelencia en el cuidado de la salud. Aspiramos a ser un centro médico innovador que
-            abarca avances médicos, promueve la educación y la prevención, y se compromete a ser un pilar en el apoyo a
-            la salud y el bienestar de todos nuestros pacientes."</p>
-    </div>
-
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -162,16 +200,20 @@
                         alt="Imagen 1" border="0">
                     <div class="card-body">
                         <h5 class="card-title">Entrega</h5>
-                        <p class="card-text">Descripción de la imagen 1.</p>
+                        <p class="card-text">Compromiso puntual y efectivo para proporcionar cuidados médicos
+                            excepcionales a cada paciente, garantizando un servicio de calidad con responsabilidad y
+                            dedicación.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="https://i.ibb.co/SrDQTpb/logo-medical.jpg" alt="Imagen 2" border="0">
+                    <img class="card-img-top" src="https://i.ibb.co/RzfhQVk/IMG-4113-1024x683.png" alt="Imagen 2"
+                        border="0">
                     <div class="card-body">
                         <h5 class="card-title">Dedicacion</h5>
-                        <p class="card-text">Descripción de la imagen 2.</p>
+                        <p class="card-text">Brindamos atención personalizada y comprometida, poniendo énfasis en el
+                            cuidado individual de cada paciente, con un enfoque centrado en su bienestar integral.</p>
                     </div>
                 </div>
             </div>
@@ -181,28 +223,53 @@
                         border="0">
                     <div class="card-body">
                         <h5 class="card-title">Esfuerzo</h5>
-                        <p class="card-text">Descripción de la imagen 3.</p>
+                        <p class="card-text">Nos esforzamos por ofrecer un tratamiento médico avanzado y completo,
+                            trabajando arduamente para asegurar la mejora constante de la salud y la calidad de vida de
+                            nuestros pacientes.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="/agendar-cita" method="post">
+                    <h5>Formulario de Registro para consultas</h5>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
 
-    <form action="/agendar-cita" method="post">
-        <label for="name">Nombre:</label>
-        <input  type="text" id="name" name="name" required>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+                    <label for="phone">Teléfono:</label>
+                    <input type="text" id="phone" name="phone" required>
 
-        <label for="phone">Teléfono:</label>
-        <input type="text" id="phone" name="phone" required>
+                    <label for="date">Fecha preferida:</label>
+                    <input type="date" id="date" name="date" required>
 
-        <label for="date">Fecha preferida:</label>
-        <input type="date" id="date" name="date" required>
-
-        <input class="btn btn-success" type="button" id="agenda" value="Agendar cita">
-    </form>
+                    <input class="btn btn-success" type="button" id="agenda" value="Agendar cita">
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="card-c" id="contacto">
+                    <div class="card-body-c">
+                        <h2 class="card-title-footer" style="text-align: center;">Contactos</h2>
+                        <span class="card-footer">Telefono:</span>
+                        <p class="p-footer">3058153418 - (601)2823652</p>
+                        <span class="card-footer">Correo:</span>
+                        <p class="p-footer">www.contactanos@medicalips.com</p>
+                        <span class="card-footer">Dirección:</span>
+                        <p class="p-footer">Carrera 7 # 12 B - 65 Bogotá</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #f4f4f4; padding: 20px; text-align: center;">
+        <p>&copy; 2023 Medical Center. Todos los derechos reservados.</p>
+        <p>Política de privacidad | Términos y condiciones</p>
+    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
