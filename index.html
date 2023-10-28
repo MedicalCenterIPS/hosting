@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Medical Center - Inicio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="icon" href="https://i.ibb.co/2vzSRHN/doctor.png" type="image/x-icon">
     <style>
         /* Estilos CSS (puedes colocarlos en un archivo .css) */
         body {
@@ -54,12 +56,13 @@
             padding: 20px;
             border-radius: 5px;
             margin-top: 20px;
+            text-align: center;
         }
 
         form label,
         form input {
             display: block;
-            margin-bottom: 10px;
+            margin: 10px auto;
         }
 
         form input[type="submit"] {
@@ -88,8 +91,29 @@
         }
 
         .card {
-            width: 80%; /* Establecer un ancho mayor para cada tarjeta */
-            margin: 10px auto; /* Centrar las tarjetas */
+            margin: 10px auto;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card-title,
+        .card-text {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 16px;
         }
     </style>
 </head>
@@ -110,37 +134,49 @@
 
     <div class="mission">
         <h2>Misión</h2>
-        <p>"En Medical Center, nos comprometemos a proporcionar una atención médica integral y compasiva a cada paciente. Nuestra misión es ofrecer servicios de alta calidad, utilizando tecnología de vanguardia y un enfoque centrado en el paciente para mejorar la salud y el bienestar de la comunidad a la que servimos."</p>
+        <p>"En Medical Center, nos comprometemos a proporcionar una atención médica integral y compasiva a cada
+            paciente. Nuestra misión es ofrecer servicios de alta calidad, utilizando tecnología de vanguardia y un
+            enfoque centrado en el paciente para mejorar la salud y el bienestar de la comunidad a la que servimos."</p>
     </div>
 
     <div class="vision">
         <h2>Visión</h2>
-        <p>"Nuestra visión en Medical Center es ser reconocidos como líderes en la prestación de servicios médicos, destacándonos por la excelencia en el cuidado de la salud. Aspiramos a ser un centro médico innovador que abarca avances médicos, promueve la educación y la prevención, y se compromete a ser un pilar en el apoyo a la salud y el bienestar de todos nuestros pacientes."</p>
+        <p>"Nuestra visión en Medical Center es ser reconocidos como líderes en la prestación de servicios médicos,
+            destacándonos por la excelencia en el cuidado de la salud. Aspiramos a ser un centro médico innovador que
+            abarca avances médicos, promueve la educación y la prevención, y se compromete a ser un pilar en el apoyo a
+            la salud y el bienestar de todos nuestros pacientes."</p>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="https://i.ibb.co/1K06Sym/Captura-de-pantalla-2023-10-25-151645-transformed.png" alt="Imagen 1" border="0">
-                <div class="card-body">
-                    <h5 class="card-title">Entrega</h5>
-                    <p class="card-text">Descripción de la imagen 1.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://i.ibb.co/1K06Sym/Captura-de-pantalla-2023-10-25-151645-transformed.png"
+                        alt="Imagen 1" border="0">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrega</h5>
+                        <p class="card-text">Descripción de la imagen 1.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="https://i.ibb.co/SrDQTpb/logo-medical.jpg" alt="Imagen 2" border="0">
-                <div class="card-body">
-                    <h5 class="card-title">Dedicacion</h5>
-                    <p class="card-text">Descripción de la imagen 2.</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://i.ibb.co/SrDQTpb/logo-medical.jpg" alt="Imagen 2" border="0">
+                    <div class="card-body">
+                        <h5 class="card-title">Dedicacion</h5>
+                        <p class="card-text">Descripción de la imagen 2.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top"  src="https://i.ibb.co/2d4nsTN/Untitled-Workspace-1.jpg" alt="Imagen 3" border="0">
-                    <h5 class="card-title">Esfuerzo</h5>
-                    <p class="card-text">Descripción de la imagen 3.</p>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://i.ibb.co/2d4nsTN/Untitled-Workspace-1.jpg" alt="Imagen 3"
+                        border="0">
+                    <div class="card-body">
+                        <h5 class="card-title">Esfuerzo</h5>
+                        <p class="card-text">Descripción de la imagen 3.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +184,7 @@
 
     <form action="/agendar-cita" method="post">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
+        <input class="miSelect" type="text" id="name" name="name" required>
 
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
@@ -159,8 +195,44 @@
         <label for="date">Fecha preferida:</label>
         <input type="date" id="date" name="date" required>
 
-        <input type="submit" value="Agendar cita">
+        <input class="btn btn-success" type="button" id="agenda" value="Agendar cita">
     </form>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+<script>
+    $('.miSelect').select2();
+    $('#agenda').on('click', function (e) {
+
+        e.preventDefault(); // Evita que se envíe el formulario automáticamente
+
+        // Validar campos
+        var nombre = $('input[name="nombre"]').val();
+        var email = $('input[name="email"]').val();
+        var telefono = $('input[name="telefono"]').val();
+
+        if (nombre === '' || email === '' || telefono === '') {
+            Swal.fire({
+                icon: 'info',
+                title: '!Lo siento!',
+                text: 'Por favor, completa todos los campos.'
+            });
+        } else {
+            Swal.fire({
+                title: 'Ok',
+                html: 'En el tiempo agendado iniciaremos tu cita vía Meet.<br>El enlace se enviará vía correo electrónico.',
+                icon: 'success',
+                showCloseButton: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    location.reload(); // Recargar la página
+                }
+            });
+        }
+    });
+</script>
 
 </html>
