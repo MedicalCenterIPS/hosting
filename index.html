@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Center - Inicio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Estilos CSS (puedes colocarlos en un archivo .css) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('https://i.ibb.co/8zhm1Z4/tu-imagen.jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .mission,
+        .vision {
+            background-color: #F4F4F4;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .mission h2,
+        .vision h2 {
+            color: #1583E9;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        form label,
+        form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #1583E9;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #1583E9;
+        }
+
+        .logo img {
+            width: 100px;
+            /* Tamaño del logo */
+        }
+
+        .card {
+            width: 80%; /* Establecer un ancho mayor para cada tarjeta */
+            margin: 10px auto; /* Centrar las tarjetas */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Medical Center</h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <h3>Agendar cita</h3>
+        </div>
+    </header>
+
+    <div class="mission">
+        <h2>Misión</h2>
+        <p>"En Medical Center, nos comprometemos a proporcionar una atención médica integral y compasiva a cada paciente. Nuestra misión es ofrecer servicios de alta calidad, utilizando tecnología de vanguardia y un enfoque centrado en el paciente para mejorar la salud y el bienestar de la comunidad a la que servimos."</p>
+    </div>
+
+    <div class="vision">
+        <h2>Visión</h2>
+        <p>"Nuestra visión en Medical Center es ser reconocidos como líderes en la prestación de servicios médicos, destacándonos por la excelencia en el cuidado de la salud. Aspiramos a ser un centro médico innovador que abarca avances médicos, promueve la educación y la prevención, y se compromete a ser un pilar en el apoyo a la salud y el bienestar de todos nuestros pacientes."</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.ibb.co/1K06Sym/Captura-de-pantalla-2023-10-25-151645-transformed.png" alt="Imagen 1" border="0">
+                <div class="card-body">
+                    <h5 class="card-title">Entrega</h5>
+                    <p class="card-text">Descripción de la imagen 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.ibb.co/SrDQTpb/logo-medical.jpg" alt="Imagen 2" border="0">
+                <div class="card-body">
+                    <h5 class="card-title">Dedicacion</h5>
+                    <p class="card-text">Descripción de la imagen 2.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top"  src="https://i.ibb.co/2d4nsTN/Untitled-Workspace-1.jpg" alt="Imagen 3" border="0">
+                    <h5 class="card-title">Esfuerzo</h5>
+                    <p class="card-text">Descripción de la imagen 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form action="/agendar-cita" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Teléfono:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="date">Fecha preferida:</label>
+        <input type="date" id="date" name="date" required>
+
+        <input type="submit" value="Agendar cita">
+    </form>
+</body>
+
+</html>
